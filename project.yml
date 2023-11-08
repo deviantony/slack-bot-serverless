@@ -1,11 +1,11 @@
 parameters: {}
 environment: {}
 packages:
-  - name: sample
+  - name: slack
     environment: {}
     parameters: {}
     actions:
-      - name: hello
+      - name: msg
         main: ''
         runtime: 'go:1.20'
         environment: {}
