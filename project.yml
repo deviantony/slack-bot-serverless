@@ -1,19 +1,12 @@
 parameters: {}
 environment: {}
 packages:
-    - name: sample
-      shared: false
-      environment: {}
-      parameters: {}
-      annotations: {}
-      functions:
-        - name: hello
-          binary: false
-          main: ""
-          runtime: go:1.20
-          web: true
-          webSecure: false
-          parameters: {}
-          environment: {}
-          annotations: {}
-          limits: {}
+  - name: sample
+    environment: {}
+    parameters: {}
+    actions:
+      - name: hello
+        main: ''
+        runtime: 'go:1.20'
+        environment: {}
+        parameters: {}
