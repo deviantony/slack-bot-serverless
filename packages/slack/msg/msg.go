@@ -18,6 +18,6 @@ func Main(ctx context.Context, event Event) map[string]interface{} {
 	}
 
 	msg := make(map[string]interface{})
-	msg["body"] = "Hello " + name + "!"
+	msg["body"] = fmt.Sprintf("Event: %+v\n", event)
 	return msg
 }
